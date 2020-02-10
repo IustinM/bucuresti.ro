@@ -65,9 +65,14 @@
                 width 0.3s linear 0.3s;
     
 }
+html,body{
+
+    width: 100%;
+    height: 100%;
+}
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-position: center center ;
     background-size: cover;
     backface-visibility: hidden;
@@ -93,7 +98,7 @@ body{
     }
 }
 #container{
-    height: 90vh;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,7 +251,7 @@ img.room-active{
 }
 #container5{
     width: 100%;
-    height: 140%;
+    height: 130%;
     background-image: url(images/g5k3_960_360.jpg);
     background-size: cover;
     background-position: center center;
@@ -489,3 +494,241 @@ font-size: 3.4rem;
 .footer p{
     margin-top: 3rem;
 }
+@media screen and (max-width:1024px){
+    html,body{
+        overflow-x: hidden;
+    }
+    #container{
+        width: 100%;
+        height: 80%;
+    }
+    .titlu{
+        font-size: 8rem;
+    }
+    nav{
+        background-color: black;
+        width: 100%;
+
+    }
+  
+    .burger{
+        display: none;
+        cursor: pointer;
+    }
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background-color:whitesmoke;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    .nav_list{
+        position: absolute;
+        right: 0px;
+        height: 96.5vh;
+        top:4vh;
+        background-color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    .nav_list li {
+        opacity: 1;
+    }
+    .burger{
+        display: block;
+    }
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+nav{
+    height: 6%;
+    margin-top: -0.3rem;
+    position: absolute;
+  
+}
+.burger{
+    position: absolute;
+    right:  0;
+    padding: 0.7rem 2rem;
+    margin-top: 0.3rem;
+
+}
+#container5{
+    display: flex;
+    flex-direction: column;
+    height: 120%;
+
+}
+#container5 p{
+   display: block;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
+}
+#container2 p{
+    font-size: 0.8rem;
+}
+.sub-titlu{
+    padding: 1rem;
+}
+}
+@media screen and (max-width:768px){
+
+
+    html,body{
+        overflow-x: hidden;
+    }
+    #container{
+        width: 100%;
+        height: 100%;
+    }
+    .titlu{
+        font-size: 3rem;
+    }
+    nav{
+        background-color: black;
+        width: 100%;
+
+    }
+  
+    .burger{
+        display: none;
+        cursor: pointer;
+    }
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background-color:whitesmoke;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    .nav_list{
+        position: absolute;
+        right: 0px;
+        height: 96.5vh;
+        top:4vh;
+        background-color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    .nav_list li {
+        opacity: 1;
+    }
+    .burger{
+        display: block;
+    }
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+nav{
+    height: 6%;
+    margin-top: -0.3rem;
+    position: absolute;
+  
+}
+.burger{
+    position: absolute;
+    right:  0;
+    padding: 0.7rem 2rem;
+    margin-top: 0.3rem;
+
+}
+#container5{
+    display: flex;
+    flex-direction: column;
+    width: 190%;
+
+}
+#container5 p{
+   display: block;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    
+}
+#container2 p{
+    font-size: 0.8rem;
+}
+#container2 {
+    height: 130%;
+}
+#container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sub-titlu{
+    padding: 1rem;
+    
+}
+.some-space{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+    height: 100%; 
+
+    color: white;
+    margin-left: 20%;
+}
+.continut2{
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.continut3{
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: left;
+    
+    
+}
+#container3{
+    height: 130%;
+}
+#container4{
+    width: 100%;
+    height: 130%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.bucuresti_descriere{
+    font-size: 2rem;
+    padding: 3rem;
+}
+.bucuresti_galerie img{
+    height: 250px;
+    width: 300px;
+}
+.bucuresti_preview img{
+    padding-top: 1rem;
+    height: 60px;
+    width: 60px;
+    flex-grow:1;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+}
+
